@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t "title" %></title>
+    <%= render "layouts/rails_default" %>
+  </head>
+
+  <body class="no-skin">
+    <div class="wrapper">
+      <%= render "layouts/admin/leftbar" %>
+      <div class="main-panel">
+        <%= render "layouts/admin/header" %>
+        <%= yield %>
+        <%= render "layouts/admin/footer" %>
+      </div>
+    </div>
+  </body>
+</html>
